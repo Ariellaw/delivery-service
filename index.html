@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order/delivery Tracking </title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- <div class="row">
+        <div class="col-75"> -->
+    <div>
+        <div>
+            <div class="container">
+                <form onSubmit="handleSubmit(event)">
+                    <h2 class="title">Customer Information</h2>
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com" required>
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <label for="streetName">Street Name</label>
+                            <input type="text" id="streetName" name="streetName" placeholder="Foster Road" required>
+                            <div class="row">
+                                <div class="col-30">
+                                    <label for="houseNumber">Street Num</label>
+                                    <input type="number" min="0" id="houseNumber" name="houseNumber" placeholder="402"
+                                        required>
+                                </div>
+                                <div class="col-30">
+                                    <label for="Entrance">Entrance</label>
+                                    <input type="text" id="entrance" name="entrance" maxlength="5" placeholder="A">
+                                </div>
+
+                                <div class="col-30">
+                                    <label for="aptNumber">Apt</label>
+                                    <input type="text" id="aptNumber" name="aptNumber" min="0" placeholder="404">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" placeholder="NY" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip Code</label>
+                                    <input type="text" id="zip" name="zip" placeholder="07670" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <label for="cnumber">Customer Number</label>
+                            <input type="text" id="cnumber" name="cnumber" placeholder="123456789" required>
+                            <label for="cphone"><i class="fa fa-phone" aria-hidden="true"></i> Phone Number</label>
+                            <input type="tel" id="cphone" name="cardnumber" placeholder="6028759658">
+                            <label for="businessName"><i class="fa fa-building" aria-hidden="true"></i> Business
+                                name(if applicable)</label>
+                            <input type="text" id="businessName" name="businessName" placeholder="Google">
+                            <div class="radio-buttons">Are you sending a package or picking one up?
+                                <br>
+                                <label for="sending">Sending</label>
+                                <input type="radio" id="sending" name="typeOfService" required>
+                                <label for="pickup">Pickup</label>
+                                <input type="radio" id="pickup" name="typeOfService" checked required>
+                            </div>
+                            <div class="radio-buttons">What type of delivery do you want?
+                                <br>
+                                <label for="homeDelivery">Home delivery </label>
+                                <input type="radio" id="homeDelivery" name="typeOfDelivery" checked required>
+                                <label for="pickup">Pickup</label>
+                                <input type="radio" id="pickup" name="typeOfDelivery" required>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+                <div class="success-msg" id="success-msg">
+                    <i class="fa fa-check"></i>
+                    Your request was carried out successfully.
+                    <i class="fa fa-times right" aria-hidden="true" onclick="removeMessage(this)"></i>
+                </div>
+                <div class="error-msg" id="error-msg">
+                    <i class="fa fa-times-circle"></i>
+                    Sorry, there was an error, please try again.
+                    <i class="fa fa-times right" aria-hidden="true" onclick="removeMessage(this)"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
